@@ -1,0 +1,152 @@
+body{
+	margin: 0px;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: 'Varela Round', sans-serif;
+}
+
+#container{
+	height: 750px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+#time1{
+	height: auto;
+	color: rgb(30,30,30);
+	font-size: 200px;
+	display: flex;
+	justify-content: center;
+}
+
+#main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#bottomStuff{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+.snow{
+	width: 220px;
+	height: 190px;
+	border-radius: 300px / 270px;
+	background-color: white;
+	position: absolute;
+	bottom: 0px;
+	box-shadow:  10px 15px 20px 8px rgba(0,0,0,0.30);
+}
+
+.tree{
+	width: 0px;
+	height: 0px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	position: absolute;
+	bottom: 0px;
+}
+
+#tree1{
+	bottom: 50px;
+	border-bottom: 200px solid rgb(82, 164, 112);
+}
+
+#tree2{
+	bottom: 40px;
+	border-bottom: 200px solid rgb(18,95,83);
+}
+
+#tree3{
+	bottom: 30px;
+	left: 100px;
+	border-bottom: 200px solid rgb(59,237,109);
+}
+
+.layer{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-color: white;
+}
+
+#layer1{
+	height: 170px;
+}
+
+#layer2{
+	height: 150px;
+}
+
+#layer3{
+	height: 130px;
+}
+
+@keyframes translate {
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	90%{
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(calc(100vw));
+	}
+}
+
+.snow{
+	animation-name: translate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.tree{
+	animation-name: translate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#snow1{
+	animation-duration: 10s;
+}
+
+#snow2{
+	animation-duration: 9s;
+}
+
+#snow3{
+	animation-duration: 8s;
+}
+
+#snow4{
+	animation-duration: 7s;
+}
+
+#snow5{
+	animation-duration: 6s;
+}
+
+#tree1{
+	animation-duration: 10s;
+}
+
+#tree2{
+	animation-duration: 8s;
+}
+
+#tree3{
+	animation-duration: 6s;
+}
