@@ -19,7 +19,8 @@ window.onload = function(){
 		//console.log(month)
 		if (month == 11) {
 			if (day < 25) {
-				months.innerHTML = day + " day(s)til Christmas";
+				var daysTil = day - 25;
+				months.innerHTML = daysTil + " day(s)til Christmas";
 			}else if (day == 25) {
 				months.innerHTML = "Happy Christmas!"
 			}else if(day > 25){
